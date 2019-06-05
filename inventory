@@ -1,10 +1,8 @@
-# Lines beginning with a # are comments, and are only included for # illustration. These comments are overkill for most inventory files. 
-# Database 
-[clientacces]
-146.148.90.98
-[bdd-mongodb]
-35.188.118.18 
-# Variables that will be applied to all servers
+[mongodb-host]
+
+ bdd-mongodb
+
 [all:vars]
-#ansible_ssh_common_args='-o StrictHostKeyChecking=no' 
+#ansible_user=user01
+ansible_ssh_common_args='-o StrictHostKeyChecking=no' 
 ansible_ssh_user=user01

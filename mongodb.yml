@@ -1,6 +1,6 @@
 ---
 - name: Setup Mongo
-  hosts: bdd-mongodb
+  hosts: mongodb-host
   become: True
   roles:
   - samdoran.mongodb
